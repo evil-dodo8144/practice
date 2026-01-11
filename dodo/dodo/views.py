@@ -15,6 +15,7 @@ def about(request):
     """this is the rendering process to push our stule.css
     for about page by rendering our index.html files 
     from templates"""
-    return render(request, 'website_about_page/index1.html')
+    return render(request, 'website/index1.html')
 def contact(request):
-    return HttpResponse("it is contact page")
+    #return HttpResponse("it is contact page")
+    return render(request,'website/index_contact.html')
